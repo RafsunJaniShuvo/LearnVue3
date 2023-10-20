@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Vue Js 3 Practice</title>
+
+</head>
+<body>
+        <div id="root">
+          <button :class="{ active: activeClass =='red' }" @click="setColor('red')"> Red </button>
+          <button :class="{ active: activeClass =='green' }" @click="setColor('green')"> Green </button>
+          <button :class="{ active: activeClass =='blue' }" @click="setColor('blue')"> Blue </button>
+
+          <div :class="activeClass">
+
+          </div>
+
+        </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
